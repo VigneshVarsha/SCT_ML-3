@@ -76,15 +76,6 @@ except Exception:
     print("Error: Could not load image.")
     sys.exit(1)
 
-
-# ---------------------------------------------------------
-# PREPROCESS
-# ---------------------------------------------------------
-image_array = tf.keras.applications.mobilenet_v2.preprocess_input(
-    image_array
-)
-
-
 # ---------------------------------------------------------
 # PREDICTION
 # ---------------------------------------------------------
